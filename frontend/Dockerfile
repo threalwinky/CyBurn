@@ -1,23 +1,38 @@
-FROM node:alpine AS base
+# Build BASE
+FROM node:20-alpine AS base
+LABEL author="winky"
 
-FROM base AS deps
-RUN apk add --no-cache libc6-compat
 WORKDIR /app
-COPY package*.json yarn.lock* ./
-RUN yarn --frozen-lockfile
+COPY package.json yarn.lock ./
+RUN apk add --no-cache git \
+    && yarn --frozen-lockfile \
+    && yarn cache clean
 
-FROM base AS builder
+# Build Image
+FROM node:20-alpine AS build
+LABEL author="winky"
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+COPY --from=BASE /app/node_modules ./node_modules
 COPY . .
-RUN yarn build
+RUN apk add --no-cache git curl \
+    && yarn build \
+    && cd .next/standalone \
+    && curl -sf https://gobinaries.com/tj/node-prune | sh -s -- -b /usr/local/bin \
+    && apk del curl \
+    && node-prune
 
-FROM base AS production
+# Build production
+FROM node:20-alpine AS production
+LABEL author="winky"
 WORKDIR /app
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
-COPY --from=builder /app/public ./public
+
+COPY --from=BUILD /app/public ./public
+COPY --from=BUILD /app/next.config.ts ./
+
+# Set mode "standalone" in file "next.config.js"
+COPY --from=BUILD /app/.next/standalone ./
+COPY --from=BUILD /app/.next/static ./.next/static
 
 EXPOSE 3000
-ENV PORT=3000
+
 CMD ["node", "server.js"]

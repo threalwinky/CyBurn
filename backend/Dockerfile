@@ -1,4 +1,5 @@
-FROM python:latest
+FROM python:3.10-slim
+LABEL author="winky"
 
 WORKDIR /app
 
