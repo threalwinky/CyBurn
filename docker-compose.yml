@@ -7,12 +7,12 @@ services:
     environment:  
       - PORT=3001
 
-  frontend:
-    build: ./frontend
-    networks:
-      - my_network
-    environment:  
-      - BACKEND_URL=http://backend:3001
+  # frontend:
+  #   build: ./frontend
+  #   networks:
+  #     - my_network
+  #   environment:  
+  #     - BACKEND_URL=http://backend:3001
 
   nginx:
     image: nginx:1.28.0-alpine-slim
