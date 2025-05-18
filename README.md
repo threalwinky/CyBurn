@@ -1,6 +1,3 @@
-Here's a polished and engaging `README.md` for the [CyBurn](https://github.com/threalwinky/CyBurn) project, designed to attract contributors and provide clear guidance:
-
----
 
 # 🔥 CyBurn
 
