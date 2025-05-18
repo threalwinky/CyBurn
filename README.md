@@ -17,12 +17,68 @@ Here's a polished and engaging `README.md` for the [CyBurn](https://github.com/t
 
 ```
 CyBurn/
-├── backend/             # Python backend services
-├── frontend/            # TypeScript frontend application
-├── labs/                # Experimental features and prototypes
-├── Dockerfile.koyeb     # Docker configuration for Koyeb deployment
-├── docker-compose.yml   # Docker Compose setup
-└── README.md            # Project documentation
+├── backend
+│   ├── app.py
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── scan.sh
+│   └── wordlists.txt
+├── docker-compose.yml
+├── Dockerfile.koyeb
+├── frontend
+│   ├── app
+│   │   ├── chat
+│   │   │   └── page.tsx
+│   │   ├── dashboard
+│   │   │   └── page.tsx
+│   │   ├── dboard
+│   │   │   └── page.tsx
+│   │   ├── decoder
+│   │   │   └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── lab
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx
+│   │   ├── login
+│   │   │   └── page.tsx
+│   │   ├── page.tsx
+│   │   ├── profile
+│   │   │   └── page.tsx
+│   │   ├── register
+│   │   │   └── page.tsx
+│   │   ├── request
+│   │   │   └── page.tsx
+│   │   └── scan
+│   │       └── page.tsx
+│   ├── Dockerfile
+│   ├── next.config.ts
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.mjs
+│   ├── public
+│   │   ├── file.svg
+│   │   ├── globe.svg
+│   │   ├── next.svg
+│   │   ├── vercel.svg
+│   │   └── window.svg
+│   ├── README.md
+│   ├── tsconfig.json
+│   └── yarn.lock
+├── labs
+│   ├── lab01
+│   │   ├── Dockerfile
+│   │   ├── index.html
+│   │   ├── nginx.conf
+│   │   ├── script.js
+│   │   └── style.css
+│   └── lab02
+│       ├── admin
+│       ├── Dockerfile
+│       ├── index.html
+│       └── nginx.conf
+├── LICENSE
+└── README.md
 ```
 
 
