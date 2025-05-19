@@ -33,15 +33,23 @@
 
 * Register page
 
-![image](https://hackmd.io/_uploads/By0LeoDbgg.png)
+![image](https://hackmd.io/_uploads/SktCzQd-el.png)
+
+* Login page
+
+![image](https://hackmd.io/_uploads/rJ9k7mdWlg.png)
 
 * Dashboard
 
-![image](https://hackmd.io/_uploads/H1i_xiPWxl.png)
+![image](https://hackmd.io/_uploads/B16jVXdZlx.png)
+
+* Topics/Cybersecurity news
+
+![image](https://hackmd.io/_uploads/ByNor7dbex.png)
 
 * CTF Labs 
 
-![image](https://hackmd.io/_uploads/HJPjxivblx.png)
+![image](https://hackmd.io/_uploads/rJvaEQuZxe.png)
 
 ![image](https://hackmd.io/_uploads/HJP2gjw-xe.png)
 
@@ -49,19 +57,19 @@
 
 * URL scanner
 
-![image](https://hackmd.io/_uploads/BkFCxsD-xl.png)
+![image](https://hackmd.io/_uploads/B1nC4XOWlx.png)
 
-![image](https://hackmd.io/_uploads/ByJW-jwZxx.png)
+![image](https://hackmd.io/_uploads/SJslBmuWxl.png)
 
 * Encoder/Decoder
 
-![image](https://hackmd.io/_uploads/rJeXZoDWeg.png)
+![image](https://hackmd.io/_uploads/H10WrXObll.png)
 
 * Request Catcher
 
-![image](https://hackmd.io/_uploads/S1bEWsDZle.png)
+![image](https://hackmd.io/_uploads/BkTMBm_-gx.png)
 
-![image](https://hackmd.io/_uploads/BJirZowbll.png)
+![image](https://hackmd.io/_uploads/rkhXSmuZxx.png)
 
 * Chat room
 
@@ -69,4 +77,4 @@
 
 * Profile
 
-![image](https://hackmd.io/_uploads/SkJZMivWel.png)
+![image](https://hackmd.io/_uploads/HkQHHX_bxl.png)

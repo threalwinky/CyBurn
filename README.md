@@ -46,7 +46,9 @@ CyBurn/
 │   │   │   └── page.tsx
 │   │   ├── request
 │   │   │   └── page.tsx
-│   │   └── scan
+│   │   ├── scan
+│   │   │   └── page.tsx
+│   │   └── topics
 │   │       └── page.tsx
 │   ├── Dockerfile
 │   ├── next.config.ts

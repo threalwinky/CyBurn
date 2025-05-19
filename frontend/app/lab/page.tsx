@@ -57,7 +57,7 @@ function Lab() {
                     <button
                         key={index}
                         onClick={() => setSelectedLab(lab)}
-                        className="bg-[#23272f] hover:bg-[#2a2f38] text-white rounded-lg shadow-md p-6 w-full text-center transition"
+                        className=" text-white w-full text-center hover:bg-neutral-800 cursor-pointer transition-colors rounded-2xl p-6 shadow-md border border-gray-300"
                     >
                         <h2 className="text-lg font-semibold">{lab.name}</h2>
                         <p className="text-sm text-gray-400 mt-2">{lab.score} pts</p>

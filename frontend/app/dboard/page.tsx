@@ -45,7 +45,7 @@ function DashboardPage() {
           <a
             key={name}
             href={'#'}
-            className="bg-neutral-900-800 hover:bg-neutral-800 transition-colors rounded-2xl p-6 shadow-md border border-gray-300"
+            className=" hover:bg-neutral-800 transition-colors rounded-2xl p-6 shadow-md border border-gray-300"
           >
             <h2 className="text-xl font-semibold text-white">{name}</h2>
             <p className="text-sm text-white mt-2">{description}</p>

@@ -8,10 +8,11 @@ import Scan from '../scan/page';
 import RequestCatcher from '../request/page';
 import Lab from '../lab/page';
 import DashboardPage from '../dboard/page';
+import Topics from '../topics/page';
 
 function Dashboard() {
     const [selectedTab, setSelectedTab] = React.useState("dashboard");
-    
+
     const checkCredentials = async () => {
 
         axios.post(process.env.NEXT_PUBLIC_API_URL + "/check-credentials", null, { withCredentials: true })
@@ -56,7 +57,7 @@ function Dashboard() {
 
     return (
         <div>
-            
+
             <div className="min-h-screen grid grid-cols-12 bg-black text-white">
                 {/* Sidebar / Navigation */}
                 <aside className="col-span-2 border-r border-gray-700 p-4 flex flex-col items-center">
@@ -71,10 +72,12 @@ function Dashboard() {
                             <a href="#" className="block hover:text-blue-400">Chat</a>
                             <a href="#" className="block hover:text-blue-400">Labs</a> */}
                             <a href="#" className="block hover:text-blue-400" onClick={() => setSelectedTab("dashboard")}>Dashboard</a>
+                            <a href="#" className="block hover:text-blue-400" onClick={() => setSelectedTab("topics")}>Topics</a>
+
                             <a href="#" className="block hover:text-blue-400" onClick={() => setSelectedTab("labs")}>Labs</a>
                             <a href="#" className="block hover:text-blue-400" onClick={() => setSelectedTab("scan")}>Scan</a>
                             <a href="#" className="block hover:text-blue-400" onClick={() => setSelectedTab("encoder")}>Encoder</a>
-                            
+
                             <a href="#" className="block hover:text-blue-400" onClick={() => setSelectedTab("webhook")}>Webhook</a>
                             <a href="#" className="block hover:text-blue-400" onClick={() => setSelectedTab("chat")}>Chat</a>
                             <a href="#" className="block hover:text-blue-400" onClick={() => setSelectedTab("profile")}>Profile</a>
@@ -94,7 +97,9 @@ function Dashboard() {
                     {/* <RequestCatcher /> */}
                     {/* <Lab /> */}
                     {/* <DashboardPage /> */}
+
                     {selectedTab === "dashboard" && <DashboardPage />}
+                    {selectedTab === "topics" && <Topics />}
                     {selectedTab === "scan" && <Scan />}
                     {selectedTab === "encoder" && <Decoder />}
                     {selectedTab === "profile" && <Profile />}

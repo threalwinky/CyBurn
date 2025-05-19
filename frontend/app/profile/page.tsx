@@ -37,14 +37,14 @@ function Profile() {
         <h1 className="text-3xl font-bold text-gray-300">Profile</h1>
       </div>
 
-      <div className="w-full bg-neutral-800 p-6 rounded-xl shadow-lg text-gray-200">
+      <div className="w-full  p-6 rounded-xl shadow-lg text-gray-200">
         <div className="flex flex-col items-center mb-6">
           <img
             className="w-24 h-24 rounded-full object-cover mb-4"
             src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg"
             alt="Avatar"
           />
-          <p className="text-lg font-semibold">{info.name}</p>
+          {/* <p className="text-lg font-semibold">{info.name}</p> */}
           {/* Uncomment if you want to show username */}
           {/* <p className="text-sm text-gray-400">{info.username}</p> */}
         </div>
